@@ -35,11 +35,11 @@
     color: #4D5AE5;
  }
  @media (max-width:480px)  {
-    .header {height: 70px;
-    width: 428px;}
+    .header {height: 75px;
+    width: 480px;}
  }
  @media (max-width:480px) {
-    .logo {padding-top: 10px;
+    .logo {padding-top: 5px;
         padding-left: 8px;
         
     }
@@ -215,7 +215,20 @@
                         padding: 12px 24px 12px;
                         border-radius: 4px;
                         }
-                        
+                        .list-adv { display: flex;
+                           
+                            flex-wrap: wrap;
+                            text-align: center;
+                        list-style: none;}
+                        .list-photo-cv {list-style: none;
+                            gap: 24px;
+                            padding-left: 72px;
+                            
+                            justify-content: center;
+                            }
+                            @media (max-width:480px) {
+                               .list-photo-cv {gap:72px 24px;}
+                            }
                         .list {list-style: none;
                             gap: 24px;}
                             @media  only screen and (min-width:481px) and (max-width:768px) {
@@ -258,6 +271,10 @@ align-items: center;}
          width: calc((100% - 3 * 24px) / 4);
          border-radius: 0px 0px 4px 4px;
          box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+         @media (max-width:480px) {
+            .photo {width: 264px;
+            margin-top: 72px;}
+         }
 .body {font-family: "Roboto", sans-serif;
                             color: #434455;
                             background-color:var(--primary-white-color);
@@ -292,10 +309,10 @@ align-items: center;}
 .header {border-bottom: 1px solid #e7e9fc;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);}
 .div {display: flex;}
-.container {min-width: 320px;
-max-width: 480px;
-padding-left: 16px;
-padding-right: 16px;
+.container {
+max-width: 428px;
+padding-left: 15px;
+padding-right: 15px;
 margin: 0 auto;
 }
 @media only screen and (min-width:481px) and (max-width:768px) {
@@ -325,7 +342,7 @@ align-items: baseline;}
 }
 .nav {display: flex;
 align-items: center;}
-.section-advantages {padding-top: 48px;
+.section-advantages {padding-top: 96px;
     padding-bottom: 48px;
     }
     @media only screen and (min-width:481px) and (max-width:768px) {
@@ -336,13 +353,19 @@ align-items: center;}
         .section-advantages {padding-top: 120px;
             padding-bottom: 120px;}
         }
-    .adv-li {width: calc((100% - 3 * 24px) / 4)}
+    .adv-li {
+        width: 396px;
+        display: list-item;}
+        
     @media only screen and (max-width: 480px) {
         .adv-li:not(:last-child) {margin-bottom: 72px;}
     }
    
 
     .section-wawd {padding-bottom: 120px; }
+    @media (max-width:480px) {
+        .section-wawd {display: none;}
+    }
     .work {padding: 32px 0;}
     .portfolio {padding: 96px 0 120px 0;}
     .butlist {display: flex;
@@ -379,16 +402,40 @@ align-items: center;}
                     letter-spacing: 0.02em;
                 color:var(--primary-accent-color);
                 }
+                @media (max-width:480px) {
+                    .namepower {font-family: Roboto;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 40px; /* 111.111% */
+                        letter-spacing: 0.72px;
+                        text-transform: capitalize;
+                        text-align: center;
+                    color: #2E2F42;}
+                }
                 .paragraf {font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 24px;
-                    
                     letter-spacing: 0.02em;
-                   
                     color: #434455;}
-
+                    @media (max-width:480px) {
+                        .paragraf {font-family: Roboto;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px; 
+                            text-align: center;
+                            letter-spacing: 0.32px;}
+                    }
+.icons { display: none;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;}
 @media only screen and (min-width:769px) {
     .icons {display: flex;
     align-items: center;
