@@ -199,7 +199,7 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 24px;
-                    max-width: 264px;
+                    width: 268px;
                     letter-spacing: 0.02em;
                  
                     color: #F4F4FD;}
@@ -518,6 +518,10 @@ align-items: center;}
         .companies {width: calc((100% - 120px) / 6);
             height:88px;
         }
+        @media (max-width:480px) {
+            .companies {width:190px;
+            height:88px;}
+        }
 .com-icon {width: 100%;
     transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     height: 100%;
@@ -532,6 +536,12 @@ color:var(--primary-semigrey-color);}
     .comp-col {fill: currentColor;}
     .foot-cont {margin-right: 120px;
     }
+    @media (max-width:480px) {
+        .foot-cont {display: list-item;
+        padding-left: 80px;
+    text-align: center;
+}
+    }
     .soc-media {font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -542,6 +552,9 @@ color:var(--primary-semigrey-color);}
     .footer-soc {display: flex;
         gap: 16px;
     list-style: none;}
+    @media (max-width:480px) {
+        .footer-soc {justify-content: center;}
+    }
         .foot-list {width: 40px;
             height: 40px;}
             .footer-list-link {width: 100%;
@@ -658,17 +671,28 @@ transition: transform 250ms ease-in-out;}
                 letter-spacing: 0.32px;}
                 .subscribe {margin-left: 80px;
                 }
+                @media (max-width:480px) {
+                    .subscribe {width:100%;
+                    padding-top: 72px;
+                margin-left: 15px;}
+                }
                 .subscribe-p {margin-bottom: 16px;
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 1.5;
                     letter-spacing: 0.02em;
                     color: #ffffff;}
+                    @media (max-width:480px) {
+                        .subscribe-p {
+                        margin-left: 176px;}
+                    }
                     .foot-form {display: flex;
                         gap: 24px;
                     }
-                    
-                    .foot-input {width: 264px;
+                    @media (max-width:480px) {
+                    .foot-form {display:block;}
+                    }
+                        .foot-input {width: 264px;
                         height: 40px;
                         border: 1px solid #ffffff;
                         background-color: transparent;
@@ -679,6 +703,9 @@ transition: transform 250ms ease-in-out;}
                         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
                         border-radius: 4px;
                         color: #ffffff;
+                    }
+                    @media (max-width:480px) {
+                        .foot-input {width: 398px;}
                     }
                     .foot-btn {min-width: 165px;
                         height: 40px;
@@ -695,6 +722,10 @@ transition: transform 250ms ease-in-out;}
                         background-color: #4D5AE5;
                         border: none;
                         border-radius: 4px;
+                    }
+                    @media (max-width:480px) {
+                        .foot-btn {margin-top: 16px;
+                        margin-left: 131px;}
                     }
                     .foot-btn:hover, .foot-btn:focus {background-color: #404bbf;}
                     .label-svg {margin-left: 16px;}
@@ -970,3 +1001,9 @@ transition: transform 250ms ease-in-out;}
                                                         transition :background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                                                     }
                                                     .mobile-menu-list {padding-left: 20px;}
+                                                    @media (max-width:480px) {
+                                                    .soc-media-foot {display: block;
+                                                        text-align: center;
+                                                        margin: 0 auto;
+                                                    padding-top: 72px;}
+                                                    }
